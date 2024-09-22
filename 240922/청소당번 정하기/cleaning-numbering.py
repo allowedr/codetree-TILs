@@ -2,7 +2,7 @@ count = int(input())
 c = 0
 h = 0
 t = 0
-for i in range(1, count) :
+for i in range(1, count+1) :
     if i % 12 == 0 :
         t = t + 1
     elif i % 3 == 0 :
