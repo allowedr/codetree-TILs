@@ -1,4 +1,5 @@
-if input() == 1 :
-    print('1')
-else :
+a = int(input())
+if a == 1 :
     print('t')
+else :
+    print('f')
