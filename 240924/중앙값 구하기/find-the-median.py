@@ -1,13 +1,5 @@
-a, b, c = map(int, input().split(' '))
+n = list(map(int, input().split(' ')))
 
-if a > b :
-    if a < c :
-        print(a)
+n.sort()
 
-if b > a :
-    if b < c :
-        print(b)
-
-if c > a:
-    if c < b:
-        print(c)
+print(n[1])
