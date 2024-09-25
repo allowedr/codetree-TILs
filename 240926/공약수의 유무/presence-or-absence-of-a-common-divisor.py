@@ -6,3 +6,4 @@ for i in range(a, b + 1) :
             break
         elif i > b + 1 :
             print('0')
+            break
