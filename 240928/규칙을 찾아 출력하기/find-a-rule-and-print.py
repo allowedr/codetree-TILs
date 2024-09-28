@@ -1,6 +1,6 @@
 n = int(input())
 print("*"*n)
 for i in range(1, n) :
-    print("*"*i, end='')
-    print(" "*(n-i-1), end= '') 
-    print("*")
+    print("* "*i, end='')
+    print("  "*(n-i-1), end= '') 
+    print("* ")
