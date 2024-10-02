@@ -3,11 +3,11 @@ if   A == 'S' :
     print('Superior')
 elif A == 'A' :
     print('Excellent')
-elif n == 'B' :
+elif A == 'B' :
     print('Good')
-elif n == 'C' :
+elif A == 'C' :
     print('Usually')
-elif n == 'D':
+elif A == 'D':
     print('Effort')
 else :
     print('Failure')
