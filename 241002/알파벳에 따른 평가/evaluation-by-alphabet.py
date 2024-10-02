@@ -1,5 +1,5 @@
 A = input()
-if A = 'S' :
+if A == 'S' :
     print('Superior')
 elif A == 'A' :
     print('Excellent')
