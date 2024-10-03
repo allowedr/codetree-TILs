@@ -1,4 +1,5 @@
-a, b = map(float, input().split())
+a = float(input())
+b = float(input())
 
 if a >= 1 and b >= 1 :
     print('High')
