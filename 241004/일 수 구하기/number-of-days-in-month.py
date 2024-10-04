@@ -1,5 +1,5 @@
 n = int(input())
-if n >= 7 :
+if n <= 7 :
     if n %  2 == 0 :
         if n == 2 :
             print('28')
