@@ -19,4 +19,4 @@ for i in range(len(p)) :
 if a >= 2 :
     print('E')
 else :
-    print('Y')
+    print('N')
