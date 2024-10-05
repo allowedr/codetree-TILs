@@ -1,5 +1,4 @@
 n = int(input())
 
-for i in range(1, n+1) :
-    if i % n == 0 :
-        print(i, end =' ')
+for i in range(1, 6) :
+    print(i * n, end = ' ')
