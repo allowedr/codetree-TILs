@@ -11,7 +11,7 @@ for i in range(len(p)) :
         a += 1
     elif p[i][0] == 'N' and int(p[i][1]) >= 37 :
         b += 1
-    elif p[i][0] == 'N' and int(p[i][1]) < 37 :
+    elif p[i][0] == 'Y' and int(p[i][1]) < 37 :
         c += 1
     else :
         d += 1
