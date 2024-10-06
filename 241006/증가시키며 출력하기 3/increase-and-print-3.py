@@ -1,4 +1,4 @@
-i = 10 :
+i = 10 
 while True :
     print(i, end=' ')
     if i == 26 :
