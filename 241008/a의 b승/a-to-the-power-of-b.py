@@ -1,7 +1,8 @@
 a, b = map(int,input().split())
 prod = a
-for i in range(1,b):
-    if b == 0:
-        print('0')
-    prod*=a
-print(prod)
+if b >= 1:
+    for i in range(1,b):
+        prod*=a
+    print(prod)
+else :
+    print('0')
