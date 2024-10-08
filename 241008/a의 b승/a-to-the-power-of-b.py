@@ -5,4 +5,4 @@ if b >= 1:
         prod*=a
     print(prod)
 else :
-    print('0')
+    print('1')
