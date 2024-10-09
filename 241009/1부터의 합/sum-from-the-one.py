@@ -6,4 +6,4 @@ for i in range(1, 100+1) :
     else : 
         s += i
     
-print(s)
+print(i)
