@@ -3,8 +3,6 @@ while True :
     n = int(input())
     if cnt = 3 :
         break
-    if n % 2 != 0 :
-        
-    else :
+    if n % 2 == 0 :
         print(n/2)
         cnt +=1
