@@ -6,3 +6,4 @@ for i in range(a, b+1):
         break
     else :
         tf = 'NO'
+print(tf)
