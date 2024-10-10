@@ -1,9 +1,9 @@
 a, b, c = map(int, input().split())
 tf = 'YES'
 for i in range(a, b+1):
-    if c % i == 0:
-        tf = 'YES'
+    if i % c == 0:
+        tf= 'NO'
         break
     else :
-        tf = 'NO'
+        tf = 'YES'
 print(tf)
