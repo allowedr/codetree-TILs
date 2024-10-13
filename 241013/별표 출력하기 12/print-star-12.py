@@ -1,10 +1,16 @@
+# 변수 선언 및 입력
 n = int(input())
-for i in range(n, -1, -1) :
-    for j in range(i) :
-        if i == n :
-            print('* '*i, end='')
-        if i % 2 == 0 :
-            print('* ', end='')
-        else :
-            print(' ', end='')
+
+for i in range(n):
+    for j in range(n):
+        if j % 2 == 0:
+            if i == 0:
+                print("* ", end="")
+            else:
+                print("  ", end="")
+        else:
+            if i <= j:
+                print("* ", end="")
+            else:
+                print("  ", end="")
     print()
