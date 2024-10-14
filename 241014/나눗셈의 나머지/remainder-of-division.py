@@ -1,7 +1,7 @@
 a, b = map(int, input().split()) 
 cnt = []
 count = 0
-while a > 1 :
+while a >= 1 :
     cnt.append(int(a%b))
     a = a/b
 
