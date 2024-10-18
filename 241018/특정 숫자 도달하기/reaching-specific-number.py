@@ -6,4 +6,4 @@ for i in range(len(arr)):
         break
     plus += arr[i]
     cnt += 1
-print(plus, plus/cnt)
+print(f'{plus} {plus/cnt:.1f}')
