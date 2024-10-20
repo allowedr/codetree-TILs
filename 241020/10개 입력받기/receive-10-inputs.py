@@ -7,7 +7,7 @@ for i in range(10):
         print(f'{s} {s/i:.1f}')
         break
     if arr.count(0) == 0 :
-        for j in range(i) :
+        for j in range(10) :
             s += arr[j]
         print(f'{s} {s/i:.1f}')
         break
