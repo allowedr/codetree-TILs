@@ -2,7 +2,7 @@ arr = list(map(int, input().split()))
 cnt_arr = [0 for _ in range(10)]
 num = -10
 for i in range(len(arr)):
-    if arr[i] != 0 :
+    if arr[i] != 0 and arr[i] >= 10:
         cnt_arr[(arr[i]//10)-1] += 1
     elif arr[i] == 0 :
         break
