@@ -4,7 +4,7 @@ num = -10
 for i in range(len(arr)):
     if arr[i] != 0 :
         cnt_arr[(arr[i]//10)-1] += 1
-    else :
+    elif arr[i] == 0 :
         break
 
 
