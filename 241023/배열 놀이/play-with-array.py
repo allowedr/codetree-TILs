@@ -16,7 +16,7 @@ for i in range(n):
         for j in range(len(arr)):
             if arr[j] == question[1] :
                 cnt += 1
-                print(arr.index(question[1])-1)
+                print(arr.index(question[1])+1)
                 break
         if cnt == 0 :
             print('0')
