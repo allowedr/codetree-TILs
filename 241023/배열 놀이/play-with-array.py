@@ -20,5 +20,7 @@ for i in range(n):
             print('0')
         elif cnt == 1 :
             print(cnt_arr[0])
+            cnt == 0
         else :
             print(cnt_arr[0])
+            cnt == 0
