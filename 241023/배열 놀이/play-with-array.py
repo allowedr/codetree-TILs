@@ -1,9 +1,8 @@
 n, p = map(int, input().split())
 arr = list(map(int, input().split()))
-
+cnt = 0
 cnt_arr = []
 for i in range(n):
-    cnt = 0
     question = list(map(int, input().split()))
     if len(question) == 3 :
         print(question, end=' ')
@@ -20,4 +19,6 @@ for i in range(n):
         if cnt == 0 :
             print('0')
         elif cnt == 1 :
+            print(cnt_arr[0])
+        else :
             print(cnt_arr[0])
