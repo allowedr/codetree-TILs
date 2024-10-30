@@ -1,5 +1,5 @@
-st1=input()
-st2=input()
+st1, st2 =input().split()
+
 
 if len(st1) > len(st2):
     print(st1, len(st1))
