@@ -20,6 +20,6 @@ else :
             nsen.append(cnt)
             lcnt += 2
 
-    print(lcnt)        
+    print(len(nsen))        
     for i in range(len(nsen)):
         print(nsen[i], end='')
