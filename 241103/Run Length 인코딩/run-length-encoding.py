@@ -2,6 +2,9 @@ sen = input()
 nsen = []
 cnt = 1
 lcnt = 0
+if len(sen) == 1 :
+    print(2)
+    print(f"{sen}1")
 for i in range(1, len(sen)):
     if sen[i] == sen[i-1]:
         cnt += 1
