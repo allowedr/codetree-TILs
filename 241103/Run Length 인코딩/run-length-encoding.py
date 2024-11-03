@@ -12,7 +12,7 @@ for i in range(1, len(sen)):
         cnt = 1
     
     if i == len(sen)-1:
-        nsen.append(sen[i-1])
+        nsen.append(sen[i])
         nsen.append(cnt)
         lcnt += 2
 
