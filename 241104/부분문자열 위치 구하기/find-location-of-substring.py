@@ -2,7 +2,7 @@ s = input()
 target = input()
 
 exists = False
-for i in range(len(s)):
+for i in range(len(s)-len(target)):
     if s[i:i + len(target)] == target :
         exists = True
         print(i)
