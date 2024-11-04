@@ -4,6 +4,7 @@ target = input()
 exists = False
 for i in range(len(s)):
     if s[i:i + len(target)] == target :
+        exists = True
         print(i)
         break     
 
