@@ -1,7 +1,7 @@
 n = int(input())
 odd = 0
 even = 0
-for i in range(n-1):
+for i in range(n):
     c = int(input())
     if c == 0 :
         break
