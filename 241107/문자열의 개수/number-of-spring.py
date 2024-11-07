@@ -11,6 +11,6 @@ while True :
         cnt += 1
 
 
-for i in range(len(arr)+1):
+for i in range(len(arr)):
     if i % 2 == 0 :
         print(arr[i])
