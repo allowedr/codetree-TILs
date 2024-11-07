@@ -1,15 +1,16 @@
 def some(a, b):
-    d = []
-    if a < b :
-        c = a
-    else :
-        c = b
+    e = []
+    c = 0
+    d = 0
+    for i in range(1, 100):
+        c = a*i
+        for j in range(1, 100):
+            d = b*j
+            if c == d :
+                e.append(c)
+                break
 
-    for i in range(1, c+1):
-        if b%i == 0 and a%i == 0:
-            d.append(i)
-
-    print(min(d))
+    print(min(e))
 
 n, m = map(int, input().split())
 some(n,m)
