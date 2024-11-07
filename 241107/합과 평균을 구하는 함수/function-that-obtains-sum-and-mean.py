@@ -7,4 +7,7 @@ for i in range(3):
         arr[i] = int(arr[i])
 
 print(sum(arr))
-print(int(sum(arr)/3))
+if float(sum(arr)/3) - int(sum(arr)/3) >= 0.5 :
+    print(int(sum(arr)/3)+1)
+else :
+    print(int(sum(arr)/3))
