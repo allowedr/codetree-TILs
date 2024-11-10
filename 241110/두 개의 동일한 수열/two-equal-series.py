@@ -8,4 +8,4 @@ B.sort()
 if A == B :
     print("Yes")
 else :
-    prnt("No")
+    print("No")
