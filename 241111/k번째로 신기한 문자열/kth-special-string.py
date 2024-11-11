@@ -5,10 +5,9 @@ arr = []
 ary = []
 for _ in range(n):
     arr.append(input())
-print(*arr)
 
 for i in range(n):
     if arr[i][:2] == T :
         ary.append(arr[i])
 ary.sort()
-print(*ary)
+print(ary[k-1])
