@@ -5,3 +5,6 @@ arr = []
 for _ in range(n):
     arr.append(input())
 print(*arr)
+
+arr.sort()
+print(*arr)
