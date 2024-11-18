@@ -7,13 +7,13 @@ elapsed_time = 0
 num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 while True:
-    if bday < 11 :
-        if bhour < 11 :
-            if bmins < 11 :
-                print('-1')
-                break
-            print('-1')
-            break
+    if bday <= 11 :
+        print('-1')
+        break
+    if bday <= 11 and bhour < 11 :
+        print('-1')
+        break
+    if bday <= 11 and bhour <= 11 and bmin < 11 :
         print('-1')
         break
     if amonth == bmonth and aday == bday and ahour == bhour and amins == bmins:
