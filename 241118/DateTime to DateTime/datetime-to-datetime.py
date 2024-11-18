@@ -7,7 +7,7 @@ elapsed_time = 0
 num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 while True:
-    if bday <= 11 :
+    if bday < 11 :
         print('-1')
         break
     if bday <= 11 and bhour < 11 :
