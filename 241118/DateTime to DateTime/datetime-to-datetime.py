@@ -30,5 +30,6 @@ while True:
     if amins == 60:
         ahour += 1
         amins = 0
-if elapsed_time >= 0 :
+if elapsed_time >= 0 and amins != bmins:
     print(elapsed_time)
+
