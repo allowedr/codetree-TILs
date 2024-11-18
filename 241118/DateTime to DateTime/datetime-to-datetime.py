@@ -13,7 +13,7 @@ while True:
     if bday <= 11 and bhour < 11 :
         print('-1')
         break
-    if bday <= 11 and bhour <= 11 and bmin < 11 :
+    if bday <= 11 and bhour <= 11 and bmins < 11 :
         print('-1')
         break
     if amonth == bmonth and aday == bday and ahour == bhour and amins == bmins:
