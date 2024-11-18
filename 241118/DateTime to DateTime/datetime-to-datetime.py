@@ -1,6 +1,5 @@
 amonth, aday, ahour, amins, bmonth= 11, 11, 11, 11, 11
 bday, bhour, bmins  = map(int, input().split())
-elapsed_days = 0
 elapsed_time = 0
 
 #                  1.  2.  3.  4.  5.  6.  7.  8.  9. 10. 11. 12.
@@ -31,5 +30,5 @@ while True:
     if amins == 60:
         ahour += 1
         amins = 0
-
-print(elapsed_time)
+if elapsed_time > 0 :
+    print(elapsed_time)
