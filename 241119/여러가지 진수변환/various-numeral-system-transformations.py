@@ -3,7 +3,7 @@ digits = []
 num = 0
 
 B = int(B)
-if B == 4
+if B == 4:
     while True:
         if N < 4:
             digits.append(N)
@@ -15,8 +15,9 @@ if B == 4
     # print binary number
     for digit in digits[::-1]:
         print(digit, end="")
+
 if B == 8 :
-    while True:
+    while True :
         if N < 8:
             digits.append(N)
             break
