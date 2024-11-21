@@ -1,12 +1,12 @@
 def selection_sort(arr):
     global n
 
-    for i in range(n):
+    for i in range(n-1):
         mini = i
-        for j in range(i+1, n+1):
+        for j in range(i+1, n):
             if arr[j] < arr[mini]:
                 mini = j
-        arr[i], arr[i+1] = arr[i+1], arr[i]
+        arr[i], arr[mini] = arr[mini], arr[i]
 
 n = int(input())
 arr = list(map(int, input().split()))
