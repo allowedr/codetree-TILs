@@ -104,32 +104,29 @@ class DoublyLinkedList:
             print("List is empty")
         else:
             return self.tail.data
-DLL = Doubly
+
+
+# 변수 선언 및 입력:
 n = int(input())
+l = DoublyLinkedList()
 
 for _ in range(n):
-    input_line = input()
-    parts = input_line.split()
-    order = parts[0]
-    if order == "push_back":
-        num = parts[1]
-        DLL.push_back(Node(int(num)))
-    elif order == "push_front":
-        num = parts[1]
-        DLL.push_front(Node(int(num)))
-    elif order == "pop_front":
-        popped = DLL.pop_front()
-        print(popped)
-    elif order == "pop_back":
-        popped = DLL.pop_back()
-        print(popped)
-    elif order == "size":
-        DLL.size()
-    elif order == "empty":
-        DLL.empty()
-    elif order == "front":
-        front = DLL.front()
-        print(front)
-    elif order == "back":
-        back = DLL.back()
-        print(back)
+    command = input()
+    if command.startswith("push_front"):
+        x = int(command.split()[1])
+        l.push_front(x)
+    elif command.startswith("push_back"):
+        x = int(command.split()[1])
+        l.push_back(x)
+    elif command == "pop_front":
+        print(l.pop_front())
+    elif command == "pop_back":
+        print(l.pop_back())
+    elif command == "size":
+        print(l.size())
+    elif command == "empty":
+        print(1 if l.empty() else 0)
+    elif command == "front":
+        print(l.front())
+    else:
+        print(l.back())
