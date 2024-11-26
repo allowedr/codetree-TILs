@@ -10,6 +10,6 @@ for gwalho in test:
     else:
         right_count += 1
 if left_count == right_count:# 괄호 열기와 닫기의 갯수가 맞다면 vps라고 판단
-    print('YES')
+    print('Yes')
 else:
     print('No')
