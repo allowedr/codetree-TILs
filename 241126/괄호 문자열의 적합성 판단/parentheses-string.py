@@ -1,6 +1,5 @@
 #문제 4번
-T = int(input())#괄호 문자열 갯수
-test = [input() for i in range(T)]#테스트 리스트에 문자열 append
+test = input()
 
 for test_case in test:
      left_count = 0#괄호 열기 카운트
@@ -11,7 +10,7 @@ for test_case in test:
             left_count += 1
         else:
             right_count += 1
-     if left_count == right_count:# 괄호 열기와 닫기의 갯수가 맞다면 vps라고 판단
-        print('YES')
-     else:
-        print('No')
+if left_count == right_count:# 괄호 열기와 닫기의 갯수가 맞다면 vps라고 판단
+    print('YES')
+else:
+    print('No')
