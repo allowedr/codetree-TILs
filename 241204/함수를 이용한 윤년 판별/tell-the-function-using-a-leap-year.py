@@ -1,13 +1,13 @@
 def is_onjeonsu(n):
     if n % 2 == 0:
         return 'false'
-    if n % 10 == 5:
+    elif n % 10 == 5:
         return 'false'
-    if n % 3 == 0 and n % 9 != 0:
+    elif n % 3 == 0 and n % 9 != 0:
         return 'false'
-    if n % 100 == 0 and n % 400 != 0 :
+    elif n % 100 == 0 and n % 400 != 0 :
         return 'false'
-    if n == 200 :
+    elif n == 200 :
         return 'false'
     return 'true'
 
