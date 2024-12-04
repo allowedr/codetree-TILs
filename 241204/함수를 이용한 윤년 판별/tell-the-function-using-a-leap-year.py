@@ -1,10 +1,10 @@
 def is_onjeonsu(n):
     if n % 2 == 0:
-        return False
+        return 'false'
     if n % 10 == 5:
-        return False
+        return 'false'
     if n % 3 == 0 and n % 9 != 0:
-        return False
+        return 'false'
     return 'true'
 
 
