@@ -7,6 +7,8 @@ def is_onjeonsu(n):
         return 'false'
     if n % 100 == 0 and n % 400 != 0 :
         return 'false'
+    if n == 200 :
+        return 'false'
     return 'true'
 
 
