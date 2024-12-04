@@ -3,7 +3,8 @@ def is_onjeonsu(n):
         return 'true'
     if n % 100 == 0 and n % 400 != 0:
         return 'false'
-    return 'false'
+    else :
+        return 'false'
 
 
 print(is_onjeonsu(int(input())))
