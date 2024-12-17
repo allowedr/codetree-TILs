@@ -1,90 +1,63 @@
-#include <iostream>
-#include <algorithm>
-using namespace std;
+import sys
 
-#define MAX_N 200
 
-int arr[MAX_N][MAX_N];
-int seq[MAX_N];
+def si():
+    return sys.stdin.readline().rstrip()
 
-int n, m;
 
-int GetNum1stRec(int x, int y){
-    int num = 0;
-    int cnt = 0;
+# 파이썬에서 트로미노 모양 배열 선언하는 법
+shapes = [
+    [[1, 1, 0],
+    [1, 0, 0],
+    [0, 0, 0]],
 
-    for(int i = x; i <= x+1; i++){
-        for(int j = y; j <= y+1; j++){
-        seq[cnt++] = arr[i][j];
-    }
-    }
+    [[1, 1, 0],
+    [0, 1, 0],
+    [0, 0, 0]],
 
-    sort(seq, seq + 4);
+    [[1, 0, 0],
+    [1, 1, 0],
+    [0, 0, 0]],
 
-    for(int i = 3; i >= 1; i--){
-        num += seq[i];
-    }
+    [[0, 1, 0],
+    [1, 1, 0],
+    [0, 0, 0]],
 
-    return num;
-}
+    [[1, 1, 1],
+    [0, 0, 0],
+    [0, 0, 0]],
 
-int GetNum2ndRec1(int x, int y){
-    int num = 0;
-    for(int i = y; i <= y+2; i++){
-        num += arr[x][i];
-    }
+    [[1, 0, 0],
+    [1, 0, 0],
+    [1, 0, 0]],
+]
 
-    return num;
-}
+# 시간을 줄이고 싶은 함수 
+def get_max_sum(x, y):
+    max_sum = 0
+    for i in range(6):
+        is_possible = True
+        sum_of_nums = 0
+        for dx in range(3):
+            for dy in range(3):
+                if is_possible:
+                    if shapes[i][dx][dy] == 0:
+                        continue
+                    if x + dx >= n or y + dy >= m:
+                        is_possible = False
+                    else:
+                        sum_of_nums += grid[x + dx][y + dy]
+        if is_possible:
+            max_sum = max(max_sum, sum_of_nums)
+    return max_sum
 
-int GetNum2ndRec2(int x, int y){
-    int num = 0;
-    for(int i = x; i <= x+2; i++){
-        num += arr[i][y];
-    }
+n, m = map(int, si().split())
+grid = [list(map(int, si().split())) for _ in range(n)]
 
-    return num;
-}
+ans = 0
 
-int main() {
+for i in range(n):
+    for j in range(m):
+        ans = max(ans, get_max_sum(i, j))
 
-    int num;
-    int max_num = 0;
-    
-    cin >> n >> m;
-
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            cin >> arr[i][j];
-        }
-    }
-
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            if(j+2 >= m) continue;
-            num = GetNum2ndRec1(i, j);
-            max_num = max(max_num, num);
-        }
-    }
-
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            if(i+2 >= n) continue;
-            num = GetNum2ndRec2(i, j);
-            max_num = max(max_num, num);
-        }
-    }
-
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            if(i+1 >= n || j+1 >= m) continue;
-            num = GetNum1stRec(i, j);
-            max_num = max(max_num, num);
-        }
-    }
-
-    cout << max_num;
-
-    return 0;
-}
-
+print(ans)
