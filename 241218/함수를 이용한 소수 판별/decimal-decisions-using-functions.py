@@ -10,4 +10,8 @@ a, b = map(int, input().split())
 for n in range(a, b+1):
     if is_prime(n):
         count += n
-print(count)
+
+if b == None :
+    print('0')
+else :
+    print(count)
