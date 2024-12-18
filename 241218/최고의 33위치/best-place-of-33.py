@@ -8,7 +8,7 @@ grid = [
 
 
 
-def get_num_of_gold(row, col_s, row_e, col_e):
+def get_num_of_gold(row_s, col_s, row_e, col_e):
 	num_of_gold = 0
 
 	for row in range(row_S, row_e, 1):
