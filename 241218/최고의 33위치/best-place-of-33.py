@@ -26,9 +26,9 @@ for row in range(n):
 		if col + 2 >= n or row + 2 >= n:
 			continue
 
-		num_of_gold = get_num_of_gold(row, col, col + 2)
+		num_of_gold = get_num_of_gold(row, col, row + 2, col + 2)
 
-		
+
 		max_gold = max(max_gold, num_of_gold)
 
 print(max_gold)
