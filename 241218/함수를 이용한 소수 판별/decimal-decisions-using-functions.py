@@ -6,8 +6,11 @@ def is_prime(n):
     return True
 
 count = 0
-a, b = map(int, input().split())
-for n in range(a, b+1):
-    if is_prime(n):
-        count += n
-print(count)
+try:
+    a, b = map(int, input().split())
+    for n in range(a, b+1):
+        if is_prime(n):
+            count += n
+    print(count)
+except:
+    print('0')
